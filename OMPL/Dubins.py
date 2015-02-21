@@ -11,8 +11,6 @@ try:
     from ompl import control as oc
     from ompl import geometric as og
 except:
-    # if the ompl module is not in the PYTHONPATH assume it is installed in a
-    # subdirectory of the parent directory called "py-bindings."
     from os.path import abspath, dirname, join
     import sys
     sys.path.insert(0, join(dirname(dirname(abspath(__file__))),'py-bindings'))
@@ -20,6 +18,8 @@ except:
     from ompl import base as ob
     from ompl import control as oc
     from ompl import geometric as og
+    
+''' center and radius for central obstacle'''
 radius = 1
 cX = 2
 cY = 3
@@ -40,11 +40,13 @@ def planWithSimpleSetup():
     
     space.setBounds(bounds)
 
+    #initial position
     start = ob.State(space)
     start().setX(0)
     start().setY(3)
     start().setYaw(math.pi)
 
+    #goal poistion
     goal = ob.State(space)
     goal().setX(5)
     goal().setY(3)
@@ -55,6 +57,8 @@ def planWithSimpleSetup():
     ss.setStateValidityChecker(ob.StateValidityCheckerFn(isStateValid))
     ss.setStartAndGoalStates(start, goal)
     si = ss.getSpaceInformation()
+    
+    #Selection of planner
     planner = og.RRTstar(si)
     ss.setPlanner(planner)
     ss.setOptimizationObjective(ob.MechanicalWorkOptimizationObjective(si))
