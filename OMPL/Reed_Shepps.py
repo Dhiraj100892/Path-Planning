@@ -20,6 +20,7 @@ except:
     from ompl import control as oc
     from ompl import geometric as og
 
+# state validator function here I considered two rectangular pathches as obstacle
 def isStateValid(state):
     x = state.getX()
     y = state.getY()
@@ -29,13 +30,17 @@ def isStateValid(state):
         return 1 
     
 def planWithSimpleSetup():
+    # defining ReedsShepp space
     space = ob.ReedsSheppStateSpace(0.4)
+    
+    # define & set the bounds of space
     bounds = ob.RealVectorBounds(2)
     bounds.setLow(0)
     bounds.setHigh(6)
     
     space.setBounds(bounds)
-
+    
+    # set the start and goal position
     start = ob.State(space)
     start().setX(0)
     start().setY(5)
@@ -46,7 +51,7 @@ def planWithSimpleSetup():
     goal().setY(3)
     goal().setYaw(math.pi/2)
 
-   
+   # using SimpleSetup class in ompl.geometry
     ss = og.SimpleSetup(space)
     ss.setStateValidityChecker(ob.StateValidityCheckerFn(isStateValid))
     ss.setStartAndGoalStates(start, goal)
@@ -65,8 +70,6 @@ def planWithSimpleSetup():
         f.write(data)
         f.close
         d = numpy.loadtxt('path.txt')
-
-        #plot
         
 
     else:
@@ -80,7 +83,8 @@ if __name__ == '__main__':
     d = numpy.loadtxt('path.txt')
     print('read')
     print(d)
-
+    
+    # interpolating the path
     points = 50
     x = numpy.zeros(shape=(points+1,1))
     y = numpy.zeros(shape=(points+1,1))
@@ -103,7 +107,7 @@ if __name__ == '__main__':
 
         plt.plot(x,y,'green')
     
-    
+    #visualization of obstacle
     rect1 = plt.Rectangle((3,0),3,2,fc='g')
     rect2 = plt.Rectangle((3,4),3,2,fc='g')
     plt.gca().add_patch(rect1)
