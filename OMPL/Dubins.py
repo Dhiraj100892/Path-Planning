@@ -74,9 +74,6 @@ def planWithSimpleSetup():
         f.close
         d = numpy.loadtxt('path.txt')
 
-        #plot
-        
-
     else:
         print("No Solution Found")
     
@@ -88,7 +85,8 @@ if __name__ == '__main__':
     d = numpy.loadtxt('path.txt')
     print('read')
     print(d)
-
+    
+    # interpolating the points
     points = 20
     x = numpy.zeros(shape=(points+1,1))
     y = numpy.zeros(shape=(points+1,1))
@@ -111,7 +109,7 @@ if __name__ == '__main__':
 
         plt.plot(x,y,'green')
     
-    
+    # visualization of obstacle
     circle  = plt.Circle((cX,cY),radius,fc = 'y')
     plt.gca().add_patch(circle)
     
