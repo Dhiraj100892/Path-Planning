@@ -12,7 +12,7 @@ https://drive.google.com/file/d/0B1Jn7RtPbkDRVGhPeFF2QjViQ2c/view?usp=sharing .
 
 And for this test image the result can be seen on
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/E_MC7vWb62A&feature=youtu.be/0.jpg)](https://www.youtube.com/watch?v=E_MC7vWb62A&feature=youtu.be)
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/E_MC7vWb62A/0.jpg)](https://www.youtube.com/watch?v=E_MC7vWb62A)
 
 https://drive.google.com/file/d/0B1Jn7RtPbkDRaFlxbzl1V0dSMmM/view?usp=sharing
 
