@@ -26,7 +26,7 @@ Start Positio = ' P '
 
 Goal position = ' . '
 
-For the above input, the maze was genreated (thanks to hacker.com)
+For the above input, the maze was genereated (thanks to hacker.com)
 
 Result
 
