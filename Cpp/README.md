@@ -1,4 +1,4 @@
-Contains c++ code for A* algorithm
+Contains c++ code for DFS, BFS, Dijkstar, A* algorithm
 
 It requires 4 input
 
@@ -26,9 +26,13 @@ Start Positio = ' P '
 
 Goal position = ' . '
 
-For the above input, the maze was genereated (thanks to hacker.com)
+Result will be 
 
-Result
+1) path length D
+
+2) path points in next D+1 lines
+
+For the above input, the maze was genereated (thanks to hacker.com), and using A* algorithm, the output is
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/azx9UGc6go4/0.jpg)](https://www.youtube.com/watch?v=azx9UGc6go4)
 
