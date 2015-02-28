@@ -26,7 +26,7 @@ Start Positio = ' P '
 
 Goal position = ' . '
 
-Result will be 
+Output contains 
 
 1) path length D
 
