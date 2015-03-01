@@ -6,7 +6,7 @@ feas_Poi.m , dist_Cost.m , che_Path.m , rrt_Star_Ext.m are matlab functions
 
 For test purpose .bmp image can found on
 
-![alt tag](http://postimg.org/image/9dsuvugf9/)
+![alt tag](https://drive.google.com/file/d/0B1Jn7RtPbkDRNW4xbXhZWDZ4cUE/view?usp=sharing)
 
 https://drive.google.com/file/d/0B1Jn7RtPbkDRVGhPeFF2QjViQ2c/view?usp=sharing . 
 
