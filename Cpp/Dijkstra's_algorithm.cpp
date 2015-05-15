@@ -2,12 +2,14 @@
 #include <vector>
 #include <cmath>
 using namespace std;
+
 struct element{
   int g = 0;
   int p_r = 0;
   int p_c = 0;
   int sta = 0;                  //0 for not visited, 1 for open list, 2 for closed list
 };
+
 int find_min_f(vector <int> r, vector <int> c, element** n )
     {
     int min = 10000;
@@ -23,7 +25,7 @@ int find_min_f(vector <int> r, vector <int> c, element** n )
     return no;
 }
 
-void A_star( int r, int c, int pacman_r, int pacman_c, int food_r, int food_c, vector <string> grid){
+void Dijksrta( int r, int c, int pacman_r, int pacman_c, int food_r, int food_c, vector <string> grid){
     element** node = new element*[r];
     for(int i = 0; i < r; i++)
         {
@@ -123,7 +125,7 @@ int main(void) {
         grid.push_back(s);
     }
 
-    A_star( r, c, pacman_r, pacman_c, food_r, food_c, grid);
+    Dijksrta( r, c, pacman_r, pacman_c, food_r, food_c, grid);
 
     return 0;
 }
