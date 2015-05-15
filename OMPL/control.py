@@ -7,6 +7,7 @@ from math import sin, cos, tan
 from functools import partial
 import math
 import time
+
 try:
     from ompl import util as ou
     from ompl import base as ob
