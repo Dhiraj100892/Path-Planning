@@ -1,4 +1,4 @@
-Contains Matlab based code for RRT* path planning.
+Contains Matlab based code for bi-directional RRT* path planning.
 
 RRT_Star.m in matlb script.
 
