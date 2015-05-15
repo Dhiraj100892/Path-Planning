@@ -3,12 +3,14 @@
 #include <queue>
 #include <stack>
 using namespace std;
+
 struct element
     {
     int p_c;
     int p_r;
     int sta = 0;                  //0 unsearched , 1 in que, 2 explored
 };
+
 void nextMove( int r, int c, int pacman_r, int pacman_c, int food_r, int food_c, vector <string> grid){
     //your logic here
     element** node = new element*[r];       // creating 2 D grid of nodes
@@ -75,6 +77,7 @@ void nextMove( int r, int c, int pacman_r, int pacman_c, int food_r, int food_c,
         cout <<path_r[path_len-i] << " " << path_c[path_len-i] <<endl;
     }
 }
+
 int main(void) {
 
     int r,c, pacman_r, pacman_c, food_r, food_c;
