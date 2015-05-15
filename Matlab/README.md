@@ -1,7 +1,8 @@
 Contains Matlab based code for bi-directional RRT* path planning.
 
-RRT_Star.m in matlb script.
+RRT_Star.m is matlab script.
 
+User has to set the start and goal destination in the code
 
 feas_Poi.m , dist_Cost.m , che_Path.m , rrt_Star_Ext.m are matlab functions
 
