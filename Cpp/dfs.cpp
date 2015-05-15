@@ -2,6 +2,7 @@
 #include <vector>
 #include <stack>
 using namespace std;
+
 void dfs( int r, int c, int pacman_r, int pacman_c, int food_r, int food_c, vector <string> grid){
     //your logic here
     vector <int> v_r;
@@ -66,6 +67,7 @@ void dfs( int r, int c, int pacman_r, int pacman_c, int food_r, int food_c, vect
     }
     
 }
+
 int main(void) {
 
     int r,c, pacman_r, pacman_c, food_r, food_c;
