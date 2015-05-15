@@ -1,6 +1,7 @@
 
 clear;
 close all;
+
 %% Initialization
 map=im2bw(imread('map1.bmp')); % input map read from a bmp file. for new maps write the file name here
 source = [200 50]; % source position in Y, X format
