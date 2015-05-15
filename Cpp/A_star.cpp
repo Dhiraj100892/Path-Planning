@@ -2,6 +2,7 @@
 #include <vector>
 #include <cmath>
 using namespace std;
+
 struct element{
   float f = 0;
   int g = 0;
@@ -9,6 +10,7 @@ struct element{
   int p_c = 0;
   int sta = 0;                  //0 for not visited, 1 for open list, 2 for closed list
 };
+
 // function for finding the index of minimum f value
 int find_min_f(vector <int> r, vector <int> c, element** n )    
     {
