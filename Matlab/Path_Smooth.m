@@ -2,7 +2,7 @@ function [ P ] = Path_Smooth( path, map )
 % Smooth out the path
 Path_S = path;
 
-%% greedy algorithm on the path points
+%% past processing algorithm on the RRT* path points
 for i = 1: size(Path_S,1)-1    
     m = size(Path_S,1);
     if( i > m-1) 
