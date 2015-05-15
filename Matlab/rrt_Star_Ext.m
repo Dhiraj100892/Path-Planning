@@ -1,6 +1,7 @@
 
 function [RRTree1,pathFound,extendFail]=rrt_Star_Ext(RRTree1,RRTree2,goal,stepsize,maxFailedAttempts,disTh,map, min_r)
 % extends the tree
+
 pathFound=[]; %if path found, returns new node connecting the two trees, index of the nodes in the two trees connected
 failedAttempts=0;
 check = -1*ones(size(RRTree1,1));
