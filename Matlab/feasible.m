@@ -1,5 +1,6 @@
 function feasible=che_Path(n,newPos,map)
 % Checks if the Path is feasible
+
 feasible=true;
 dir=atan2(newPos(1)-n(1),newPos(2)-n(2));
 if ~feas_Poi(newPos,map), feasible=false;
