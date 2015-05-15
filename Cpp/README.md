@@ -1,4 +1,4 @@
-Contains c++ code for DFS, BFS, Dijkstar, A* algorithm
+Contains c++ codes for DFS, BFS, Dijkstar, A* algorithm
 
 It requires 4 input
 
